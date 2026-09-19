@@ -16,6 +16,7 @@ TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://g
 |---|---|
 | **Open questions** | [`docs/research_focus.json`](docs/research_focus.json) — the engine's current questions and frontier. All three active questions are provisional as of 2026-09-19, pending Jordan's confirmation. |
 | **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from, one per question, DOI-verified. Provisional, pending Jordan's and Mikael's confirmation. |
+| **Claude Project instructions** | [`docs/project_instructions.md`](docs/project_instructions.md) — the canonical, paste-in instruction set for running a Claude Project against this repo (v0.2, 2026-09-19). |
 
 Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript directory yet. Those get added once the seed-driven paper corpus exists.
 
@@ -32,34 +33,16 @@ Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript direc
 
 ## Using TDAP inside your own Claude
 
-If you use Claude, you can give it live access to TDAP's current state — the project overview and its open research questions — so it can help you explore the corpus and shape your suggestions. It reads directly from this repository, so it's always current.
+TDAP is a collaboration between Jordan Matuszewski (CUNY Graduate Center, PhD student in Computer Science, advised by Mikael Vejdemo-Johansson) and Gary Welz (CUNY Graduate Center / New Media Lab), part of the Copernicus Knowledge Engine suite. If you use Claude, you can give it live access to this project's current state — it fetches directly from this repository, so it stays current automatically without any uploading or re-syncing.
 
 **Set it up once:**
 
 1. In Claude, create a new Project (name it "TDAP" or similar).
-2. Open the project's **instructions** and paste the block below.
-3. That's it — every conversation in that project now reads TDAP's current context live from GitHub.
+2. Turn on web access for the Project — the instructions below fetch live files from this repo, which needs it.
+3. Open [`docs/project_instructions.md`](docs/project_instructions.md), copy its full contents, and paste them into the Project's custom instructions.
+4. Fill in the `[bracketed]` items in what you pasted — those are yours to decide, not preset.
 
-```
-This project works with the Topological Data Analysis Project (TDAP).
-At the start of substantive work, fetch these from GitHub and treat them
-as the current source of truth:
-- https://raw.githubusercontent.com/garywelz/tdap/main/README.md
-- https://raw.githubusercontent.com/garywelz/tdap/main/docs/research_focus.json
-- https://raw.githubusercontent.com/garywelz/tdap/main/docs/seed_papers.md
-
-TDAP is a collaboration between Jordan Matuszewski (CUNY Graduate Center,
-PhD student in Computer Science, advised by Mikael Vejdemo-Johansson) and
-Gary Welz (CUNY Graduate Center / New Media Lab), part of the Copernicus
-Knowledge Engine suite. This is your window into the project: explore the
-seed papers and citation-expansion corpus, and the open research questions,
-and use what you find to shape suggestions and analysis for Jordan's
-research. The project's canonical files live in GitHub and are maintained
-by the project's collaborators -- so treat this as a rich read-only context
-to think with, not a workspace to edit.
-```
-
-Nothing to upload, nothing to keep in sync — when the project updates, your Claude sees it the next time you start a conversation.
+`docs/project_instructions.md` is the single canonical instruction set — this README doesn't carry its own separate copy, so there's nothing here to fall out of sync. If the instructions need to change, edit that file, not this section.
 
 ## Background
 
