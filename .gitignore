@@ -1,0 +1,11 @@
+# Credentials / secrets — never commit
+.env
+.env.*
+!.env.example
+*-sa.json
+*credentials*.json
+*.pem
+*.key
+
+# Cleanout staging (local-only, reversible buffer before eventual empty-pass)
+archive/

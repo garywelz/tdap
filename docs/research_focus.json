@@ -1,0 +1,45 @@
+{
+  "project": "Topological Data Analysis Project",
+  "updated": "2026-09-19",
+
+  "provisional_questions": {
+    "note": "All three active_questions below are provisional pending Jordan Matuszewski's confirmation. Draft seed/anchor-author mappings for tdap-q1 and tdap-q2 exist (per Claude Chat's 2026-09-19 review) but are deliberately not recorded here — this file's schema matches atap/glmp's docs/research_focus.json, and per the existing seed-promotion design (see huggingface-space/scripts/acquire_papers/researcher_cited_intake.py, --cited-for-question help text, in copernicus-web), a question's seed set is a separate, deliberate step, never auto-promoted into this file. The seed file with resolved DOIs lives alongside the citation-expansion pilot run, not here.",
+    "ids": ["tdap-q1", "tdap-q2", "tdap-q3"]
+  },
+
+  "active_questions": [
+    {
+      "id": "tdap-q1",
+      "q": "How is persistent cohomology used to recover circular and toroidal coordinates from data, and what does that construction require of the underlying cocycle?",
+      "terms": ["circular coordinates", "toroidal coordinates", "persistent cohomology", "cocycle", "cohomological coordinatization", "sensor network coverage"],
+      "since": "2026-09-19"
+    },
+    {
+      "id": "tdap-q2",
+      "q": "What algorithms and implementations compute persistent (co)homology at scale, and what are the current tradeoffs between exactness, memory, and runtime?",
+      "terms": ["persistent homology algorithm", "matrix reduction", "persistence computation", "Ripser", "GUDHI", "cohomology algorithm", "computational topology software"],
+      "since": "2026-09-19"
+    },
+    {
+      "id": "tdap-q3",
+      "q": "Where does cyclic or recurrent structure appear in biomedical and physiological data, and can persistent cohomology's circular-coordinate methods detect it?",
+      "terms": ["cyclic structure", "physiological time series", "biomedical topology", "recurrence", "circular coordinates application", "topological data analysis biology"],
+      "since": "2026-09-19"
+    }
+  ],
+
+  "frontier": [],
+
+  "flagged": [],
+
+  "categories": ["math.AT", "cs.CG", "stat.ML", "math.DS"],
+
+  "horizons": [
+    "applied and computational topology software ecosystems (GUDHI, Ripser, Dionysus)",
+    "topological methods in machine learning (persistence landscapes, vectorization)",
+    "sensor networks and coverage problems as an original motivating application",
+    "connections to the existing GLMP TDA pilot (persistent homology on gene-regulatory circuit topology, glmp/tda-analysis/, with Dr. Vejdemo-Johansson)"
+  ],
+
+  "mute": ["cryptocurrency", "stock price prediction", "LLM benchmark leaderboard results", "quantum supremacy claims"]
+}
