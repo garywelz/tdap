@@ -15,6 +15,7 @@ TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://g
 | | |
 |---|---|
 | **Open questions** | [`docs/research_focus.json`](docs/research_focus.json) — the engine's current questions and frontier. All three active questions are provisional as of 2026-09-19, pending Jordan's confirmation. |
+| **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from, one per question, DOI-verified. Provisional, pending Jordan's and Mikael's confirmation. |
 
 Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript directory yet. Those get added once the seed-driven paper corpus exists.
 
@@ -24,7 +25,8 @@ Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript direc
 
 - **The future graphics/chart bucket should be format-agnostic, not Mermaid-specific.** GLMP and ATAP both settled on Mermaid diagrams for their process/proof charts; TDAP has explicitly deferred deciding on a chart format for version one (no TDAP chart family yet — see `copernicus-web`'s `PROCESS_FAMILY_COLLECTIONS`). When TDAP does grow chart or diagram artifacts, the format should be chosen for what persistent-cohomology and circular-coordinate objects actually need to show (e.g. persistence diagrams, barcodes, toroidal embeddings) rather than defaulting to the nodes-and-edges shape Mermaid is built for — the same "anti-hammer" caution ATAP's own `research_focus.json` (`atap-f3`) already raises about its own domain.
 - **License is currently mirrored from ATAP/GLMP (CC0 1.0 Universal)** as a default, not yet confirmed with Jordan.
-- **Jordan's GitHub username is not yet known** — this repo has not been shared or had a collaborator added.
+- **Jordan's GitHub username is not yet known** — no collaborator added yet, though the repo is now public and readable/forkable without one.
+- **Jordan's name and CCNY email are listed publicly in this README** (mirroring how Gary's own contact info is listed) — not yet confirmed acceptable with Jordan, and now a real question since the repo went from private to public.
 
 ---
 
@@ -44,14 +46,17 @@ At the start of substantive work, fetch these from GitHub and treat them
 as the current source of truth:
 - https://raw.githubusercontent.com/garywelz/tdap/main/README.md
 - https://raw.githubusercontent.com/garywelz/tdap/main/docs/research_focus.json
+- https://raw.githubusercontent.com/garywelz/tdap/main/docs/seed_papers.md
 
-TDAP is Gary Welz's research project (CUNY Graduate Center / New Media Lab),
-built with Jordan Matuszewski. This is your window into the project: explore
-the seed papers and citation-expansion corpus, and the open research
-questions, and use what you find to shape suggestions and analysis. The
-project's canonical files live in GitHub and are maintained by the project
-leads -- so treat this as a rich read-only context to think with, not a
-workspace to edit.
+TDAP is a collaboration between Jordan Matuszewski (CUNY Graduate Center,
+PhD student in Computer Science, advised by Mikael Vejdemo-Johansson) and
+Gary Welz (CUNY Graduate Center / New Media Lab), part of the Copernicus
+Knowledge Engine suite. This is your window into the project: explore the
+seed papers and citation-expansion corpus, and the open research questions,
+and use what you find to shape suggestions and analysis for Jordan's
+research. The project's canonical files live in GitHub and are maintained
+by the project's collaborators -- so treat this as a rich read-only context
+to think with, not a workspace to edit.
 ```
 
 Nothing to upload, nothing to keep in sync — when the project updates, your Claude sees it the next time you start a conversation.
