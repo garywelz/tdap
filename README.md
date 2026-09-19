@@ -28,6 +28,34 @@ Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript direc
 
 ---
 
+## Using TDAP inside your own Claude
+
+If you use Claude, you can give it live access to TDAP's current state — the project overview and its open research questions — so it can help you explore the corpus and shape your suggestions. It reads directly from this repository, so it's always current.
+
+**Set it up once:**
+
+1. In Claude, create a new Project (name it "TDAP" or similar).
+2. Open the project's **instructions** and paste the block below.
+3. That's it — every conversation in that project now reads TDAP's current context live from GitHub.
+
+```
+This project works with the Topological Data Analysis Project (TDAP).
+At the start of substantive work, fetch these from GitHub and treat them
+as the current source of truth:
+- https://raw.githubusercontent.com/garywelz/tdap/main/README.md
+- https://raw.githubusercontent.com/garywelz/tdap/main/docs/research_focus.json
+
+TDAP is Gary Welz's research project (CUNY Graduate Center / New Media Lab),
+built with Jordan Matuszewski. This is your window into the project: explore
+the seed papers and citation-expansion corpus, and the open research
+questions, and use what you find to shape suggestions and analysis. The
+project's canonical files live in GitHub and are maintained by the project
+leads -- so treat this as a rich read-only context to think with, not a
+workspace to edit.
+```
+
+Nothing to upload, nothing to keep in sync — when the project updates, your Claude sees it the next time you start a conversation.
+
 ## Background
 
 TDAP's anchor-author overlap with GLMP is not incidental: Dr. Mikael Vejdemo-Johansson (CUNY Graduate Center) already collaborated on a persistent-homology pilot over GLMP's gene-regulatory circuit corpus (`glmp/tda-analysis/`, part of the CopernicusAI / NSF CISE proposal) — computing H1 loops over 108 processes and finding that the most persistent loops correspond to known feedback circuits (lac operon, two-component signaling, SOS response). TDAP is the topology-first counterpart: instead of applying TDA to an existing biological corpus, it builds a corpus around the topology itself — starting from persistent cohomology and circular coordinates, with computational-topology-at-scale and biomedical applications as adjacent questions.
