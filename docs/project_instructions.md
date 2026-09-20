@@ -1,4 +1,4 @@
-# TDAP — Project Instructions (v0.2, 2026-09-19)
+# TDAP — Project Instructions (v0.3, 2026-09-19)
 
 > Paste into your Claude Project's custom instructions. Items in [brackets] are yours to fill in or change. Everything here is a starting point — edit freely; it is your workspace.
 
@@ -14,6 +14,7 @@ At the start of substantive work, fetch these and treat them as the current stat
 - https://raw.githubusercontent.com/garywelz/tdap/main/README.md
 - https://raw.githubusercontent.com/garywelz/tdap/main/docs/research_focus.json
 - https://raw.githubusercontent.com/garywelz/tdap/main/docs/seed_papers.md
+- https://raw.githubusercontent.com/garywelz/tdap/main/docs/hold_list.md
 
 If a fetch fails, say so and continue from project knowledge; do not reconstruct the files from memory.
 
