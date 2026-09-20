@@ -2,7 +2,7 @@
 
 TDAP studies persistent cohomology and the circular/toroidal coordinates it recovers from data — and, downstream, where that machinery can detect cyclic or recurrent structure in domains that were not built with topology in mind.
 
-TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://github.com/garywelz/glmp) and [ATAP](https://github.com/garywelz/atap). This repository holds the engine's open questions. As of this writing there is no chart corpus or manuscript yet — TDAP starts as a metadata-first paper corpus grown from a small set of seed papers and anchor authors, following the acquisition and embedding pipeline already built for GLMP and ATAP in [copernicus-web](https://github.com/garywelz/copernicus-web).
+TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://github.com/garywelz/glmp) and [ATAP](https://github.com/garywelz/atap). This repository holds the engine's open questions. As of 2026-09-19, TDAP has a 130-paper metadata-first corpus (see **Corpus status** below) grown from six seed papers and anchor authors, following the acquisition and embedding pipeline already built for GLMP and ATAP in [copernicus-web](https://github.com/garywelz/copernicus-web) — there is still no chart corpus or manuscript.
 
 *Gary Welz · CUNY Graduate Center / New Media Lab · [gwelz@gc.cuny.edu](mailto:gwelz@gc.cuny.edu)*
 
@@ -15,10 +15,18 @@ TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://g
 | | |
 |---|---|
 | **Open questions** | [`docs/research_focus.json`](docs/research_focus.json) — the engine's current questions and frontier. All three active questions are provisional as of 2026-09-19, pending Jordan's confirmation. |
-| **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from, one per question, DOI-verified. Provisional, pending Jordan's and Mikael's confirmation. |
+| **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from. Six confirmed (named by Jordan); four additional tdap-q3 candidates still pending Jordan's and Mikael's confirmation. |
 | **Claude Project instructions** | [`docs/project_instructions.md`](docs/project_instructions.md) — the canonical, paste-in instruction set for running a Claude Project against this repo (v0.2, 2026-09-19). |
 
-Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript directory yet. Those get added once the seed-driven paper corpus exists.
+Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript directory yet. Those get added once TDAP has its own chart or manuscript artifacts.
+
+---
+
+## Corpus status (2026-09-19)
+
+**130 papers, 100% embedded.** Grown by one-hop citation-graph expansion from the six confirmed seed papers, keeping candidates cited by 2+ seeds or citing a confirmed seed directly. Full method, every number, and every verification step: [`TDAP_BACKFILL_RECON_2026-09-19.md`](https://github.com/garywelz/copernicus-web/blob/main/papers/TDAP_BACKFILL_RECON_2026-09-19.md) in `copernicus-web`. A further 66-paper hold list — broader background material from one seed's survey-style bibliography, plus everything reachable only from the four not-yet-confirmed tdap-q3 candidate seeds — awaits Jordan's and Mikael's spot-check: [`tdap_hold_list_v2_2026-09-19.md`](https://github.com/garywelz/copernicus-web/blob/main/papers/tdap_hold_list_v2_2026-09-19.md).
+
+Known limits (detail in the recon doc above): the live Knowledge Engine toggle doesn't yet scope paper search to TDAP specifically (shared with GLMP/ATAP); a couple of DOI pairs point to the same underlying paper (kept as separate records, not deduplicated); a few titles carry unnormalized HTML or LaTeX artifacts from their source metadata; one seed (Scoccola et al.) has no DOI on file, only an arXiv id.
 
 ---
 
