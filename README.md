@@ -6,7 +6,7 @@ TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://g
 
 *Gary Welz · CUNY Graduate Center / New Media Lab · [gwelz@gc.cuny.edu](mailto:gwelz@gc.cuny.edu)*
 
-**Collaborator:** Jordan Matuszewski, PhD student in Computer Science, CUNY Graduate Center · [jmatuszewski@ccny.cuny.edu](mailto:jmatuszewski@ccny.cuny.edu)
+TDAP's research questions come from a domain collaborator; the engine's corpus and infrastructure are maintained by Gary Welz.
 
 ---
 
@@ -14,10 +14,10 @@ TDAP is a new engine in the Copernicus science suite, alongside [GLMP](https://g
 
 | | |
 |---|---|
-| **Open questions** | [`docs/research_focus.json`](docs/research_focus.json) — the engine's current questions and frontier. All three active questions are provisional as of 2026-09-19, pending Jordan's confirmation. |
-| **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from. Six confirmed (named by Jordan); four additional tdap-q3 candidates still pending Jordan's and Mikael's confirmation. |
+| **Open questions** | [`docs/research_focus.json`](docs/research_focus.json) — the engine's current questions and frontier. All three active questions are provisional as of 2026-09-19, pending the collaborator's confirmation. |
+| **Seed papers** | [`docs/seed_papers.md`](docs/seed_papers.md) — the papers TDAP's citation-graph expansion grows from. Six confirmed (named by the collaborator); four additional tdap-q3 candidates still pending confirmation. |
 | **Claude Project instructions** | [`docs/project_instructions.md`](docs/project_instructions.md) — the canonical, paste-in instruction set for running a Claude Project against this repo (v0.3, 2026-09-19). |
-| **Hold list** | [`docs/hold_list.md`](docs/hold_list.md) — 66 candidate papers not yet added to the corpus, for Jordan's spot-check. |
+| **Hold list** | [`docs/hold_list.md`](docs/hold_list.md) — 66 candidate papers not yet added to the corpus, for the collaborator's spot-check. |
 
 Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript directory yet. Those get added once TDAP has its own chart or manuscript artifacts.
 
@@ -25,7 +25,7 @@ Unlike ATAP and GLMP at this stage, there is no corpus table or manuscript direc
 
 ## Corpus status (2026-09-19)
 
-**130 papers, 100% embedded.** Grown by one-hop citation-graph expansion from the six confirmed seed papers, keeping candidates cited by 2+ seeds or citing a confirmed seed directly. Full method, every number, and every verification step: [`TDAP_BACKFILL_RECON_2026-09-19.md`](https://github.com/garywelz/copernicus-web/blob/main/papers/TDAP_BACKFILL_RECON_2026-09-19.md) in `copernicus-web`. A further 66-paper hold list — broader background material from one seed's survey-style bibliography, plus everything reachable only from the four not-yet-confirmed tdap-q3 candidate seeds — awaits Jordan's and Mikael's spot-check: [`docs/hold_list.md`](docs/hold_list.md).
+**130 papers, 100% embedded.** Grown by one-hop citation-graph expansion from the six confirmed seed papers, keeping candidates cited by 2+ seeds or citing a confirmed seed directly. Full method, every number, and every verification step: [`TDAP_BACKFILL_RECON_2026-09-19.md`](https://github.com/garywelz/copernicus-web/blob/main/papers/TDAP_BACKFILL_RECON_2026-09-19.md) in `copernicus-web`. A further 66-paper hold list — broader background material from one seed's survey-style bibliography, plus everything reachable only from the four not-yet-confirmed tdap-q3 candidate seeds — awaits spot-check: [`docs/hold_list.md`](docs/hold_list.md).
 
 Known limits (detail in the recon doc above): the live Knowledge Engine toggle doesn't yet scope paper search to TDAP specifically (shared with GLMP/ATAP); a couple of DOI pairs point to the same underlying paper (kept as separate records, not deduplicated); a few titles carry unnormalized HTML or LaTeX artifacts from their source metadata; one seed (Scoccola et al.) has no DOI on file, only an arXiv id.
 
@@ -34,15 +34,14 @@ Known limits (detail in the recon doc above): the live Knowledge Engine toggle d
 ## Open items
 
 - **The future graphics/chart bucket should be format-agnostic, not Mermaid-specific.** GLMP and ATAP both settled on Mermaid diagrams for their process/proof charts; TDAP has explicitly deferred deciding on a chart format for version one (no TDAP chart family yet — see `copernicus-web`'s `PROCESS_FAMILY_COLLECTIONS`). When TDAP does grow chart or diagram artifacts, the format should be chosen for what persistent-cohomology and circular-coordinate objects actually need to show (e.g. persistence diagrams, barcodes, toroidal embeddings) rather than defaulting to the nodes-and-edges shape Mermaid is built for — the same "anti-hammer" caution ATAP's own `research_focus.json` (`atap-f3`) already raises about its own domain.
-- **License is currently mirrored from ATAP/GLMP (CC0 1.0 Universal)** as a default, not yet confirmed with Jordan.
-- **Jordan's GitHub username is not yet known** — no collaborator added yet, though the repo is now public and readable/forkable without one.
-- **Jordan's name and CCNY email are listed publicly in this README** (mirroring how Gary's own contact info is listed) — not yet confirmed acceptable with Jordan, and now a real question since the repo went from private to public.
+- **License is currently mirrored from ATAP/GLMP (CC0 1.0 Universal)** as a default, not yet confirmed with the collaborator.
+- **The collaborator's GitHub username is not yet known** — no collaborator added yet, though the repo is now public and readable/forkable without one.
 
 ---
 
 ## Using TDAP inside your own Claude
 
-TDAP is a collaboration between Jordan Matuszewski (CUNY Graduate Center, PhD student in Computer Science, advised by Mikael Vejdemo-Johansson) and Gary Welz (CUNY Graduate Center / New Media Lab), part of the Copernicus Knowledge Engine suite. If you use Claude, you can give it live access to this project's current state — it fetches directly from this repository, so it stays current automatically without any uploading or re-syncing.
+TDAP is a collaboration between a domain collaborator and Gary Welz (CUNY Graduate Center / New Media Lab), part of the Copernicus Knowledge Engine suite. If you use Claude, you can give it live access to this project's current state — it fetches directly from this repository, so it stays current automatically without any uploading or re-syncing.
 
 **Set it up once:**
 
