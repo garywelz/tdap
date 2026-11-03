@@ -32,7 +32,7 @@ to or tighten the shared rules, never loosen their invariants
 ## This repo
 
 - **The TDAP engine** — persistent cohomology and circular/toroidal coordinates. A
-  **shared engine**: Gary is PI; the domain collaborator named in the README
+  **shared engine**: Gary is PI; the domain collaborator
   owns the research questions.
 - **This repo is public.** Never commit unpublished work, data, drafts, or advisor
   correspondence — the collaborator's or anyone's.

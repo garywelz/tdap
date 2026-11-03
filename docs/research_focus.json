@@ -3,7 +3,8 @@
   "updated": "2026-09-19",
 
   "provisional_questions": {
-    "note": "All three active_questions below are provisional pending Jordan Matuszewski's confirmation. Draft seed/anchor-author mappings for tdap-q1 and tdap-q2 exist (per Claude Chat's 2026-09-19 review) but are deliberately not recorded here — this file's schema matches atap/glmp's docs/research_focus.json, and per the existing seed-promotion design (see huggingface-space/scripts/acquire_papers/researcher_cited_intake.py, --cited-for-question help text, in copernicus-web), a question's seed set is a separate, deliberate step, never auto-promoted into this file. The seed file with resolved DOIs lives alongside the citation-expansion pilot run, not here.",
+    "note": "All three active_questions below are provisional pending the owners' confirmation. The seed papers (six confirmed, four proposed for tdap-q3) are recorded in docs/seeds.csv, the record the Engine Onboarding loader reads, and described in docs/seed_papers.md. A question's seed set is a separate, deliberate step and is never promoted into this file automatically.",
+    "placeholders_note": "The terms, categories, horizons and mute lists in this file are placeholders of 2026-09-19, pending the owners' review.",
     "ids": ["tdap-q1", "tdap-q2", "tdap-q3"]
   },
 
