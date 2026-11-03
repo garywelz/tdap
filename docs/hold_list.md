@@ -1,12 +1,21 @@
-# TDAP hold list — for Jordan's spot-check
+# TDAP hold list — for the owners' review
 
-66 candidate papers found by TDAP's citation-expansion pipeline, held back rather than added to the corpus. **Nothing on this list has been written anywhere** — these are proposals, not corpus members. They're held either because they're background material a broad survey cites for context rather than TDA content itself, or because they were only reachable from four candidate seed papers for a possible future question (tdap-q3, biomedical/physiological) that haven't been confirmed yet.
+65 candidate papers found by TDAP's citation-expansion pipeline, held back rather than added to the corpus. **Nothing on this list has been written anywhere** — these are proposals, not corpus members. They're held either because they're background material a broad survey cites for context rather than TDA content itself, or because they were only reachable from four candidate seed papers for a possible future question (tdap-q3, biomedical/physiological) that haven't been confirmed yet.
 
-**To respond**: mark each item keep or drop, then either reply to Gary directly, or open an issue or pull request on this repo.
+**To respond**: mark each item keep or drop, then either reply to Gary directly, or open an issue or pull request on this repo, or through the onboarding form once it opens.
 
 (Revised from an earlier, broader version per Claude Chat's title review.)
 
-## Moved from tier-1 after review (25) — co-citation only with unconfirmed tdap-q3 seeds, example-dataset papers, or record-quality issues
+**Reading the labels.** Each item ends with why the pipeline surfaced it and how often the paper is cited:
+
+- `cited_by_2plus_seeds` — cited by two or more of the seed papers (confirmed or proposed).
+- `top_cited_in_seed` — one of the most-cited items in a single seed paper's reference list.
+- `all_references_from_seed` — included only because that seed's policy admits every reference it lists.
+- `cited_by=N` — how many papers cite it (as recorded by the sources the pipeline queried).
+
+## Moved out of the first corpus write on review (24)
+
+These were held back because they are linked only to the unconfirmed tdap-q3 seeds, are example-dataset papers, or have record-quality issues.
 
 Four flagged by Chat as **likely accept** on a closer look — bolded below.
 
@@ -16,7 +25,7 @@ Four flagged by Chat as **likely accept** on a closer look — bolded below.
 - Place units in the hippocampus of the freely moving rat -- `10.1016/0014-4886(76)90055-8`, top_cited_in_seed, cited_by=1920
 - Head-direction cells recorded from the postsubiculum in freely moving rats. I. Description and quantitative analysis -- `10.1523/jneurosci.10-02-00420.1990`, cited_by_2plus_seeds, cited_by=1895
 - Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex -- `10.1126/science.1125572`, cited_by_2plus_seeds, cited_by=1558
-- ELEMENTS OF ALGEBRAIC TOPOLOGY -- `10.1016/b978-0-08-016160-0.50028-2`, cited_by_2plus_seeds, cited_by=1304
+- ELEMENTS OF ALGEBRAIC TOPOLOGY (a chapter of Kuratowski, *Introduction to Set Theory and Topology*, Elsevier, 1972, pp. 291–342) -- `10.1016/b978-0-08-016160-0.50028-2`, cited_by_2plus_seeds, cited_by=1304
 - Representation of spatial orientation by the intrinsic dynamics of the head-direction cell ensemble: a theory -- `10.1523/jneurosci.16-06-02112.1996`, cited_by_2plus_seeds, cited_by=1069
 - Persistent Propagation of Concentration Waves in Dissipative Media Far from Thermal Equilibrium -- `10.1143/ptp.55.356`, top_cited_in_seed, cited_by=1049
 - Accurate Path Integration in Continuous Attractor Network Models of Grid Cells -- `10.1371/journal.pcbi.1000291`, cited_by_2plus_seeds, cited_by=858
@@ -34,9 +43,10 @@ Four flagged by Chat as **likely accept** on a closer look — bolded below.
 - Topological analysis of population activity in visual cortex **[Chat: likely accept]** -- `10.1167/8.8.11`, cited_by_2plus_seeds, cited_by=232
 - A Topological Paradigm for Hippocampal Spatial Map Formation Using Persistent Homology **[Chat: likely accept]** -- `10.1371/journal.pcbi.1002581`, cited_by_2plus_seeds, cited_by=223
 - An Algebraic Family of Complex Lattices for Fading Channels With Application to Space–Time Codes -- `10.1109/tit.2005.858923`, all_references_from_seed, cited_by=34
-- Wolfram -- `10.1007/bf01565634`, all_references_from_seed, cited_by=0
 
-## Otter et al. — held (10) — broad background material (small-world networks, clustering, physics), not TDA
+## Background material cited by the Otter et al. roadmap (10)
+
+Broad background (small-world networks, clustering, physics) that the roadmap cites for context, not TDA content itself.
 
 - Collective dynamics of ‘small-world’ networks -- `10.1038/30918`, top_cited_in_seed, cited_by=43633
 - Novel Type of Phase Transition in a System of Self-Driven Particles -- `10.1103/physrevlett.75.1226`, top_cited_in_seed, cited_by=7529
@@ -49,7 +59,9 @@ Four flagged by Chat as **likely accept** on a closer look — bolded below.
 - Small-world connectivity, motif composition, and complexity of fractal neuronal connections -- `10.1016/j.biosystems.2006.02.008`, all_references_from_seed, cited_by=190
 - Unveiling patterns of international communities in a global city using mobile phone data -- `10.1140/epjds/s13688-015-0041-5`, all_references_from_seed, cited_by=40
 
-## From the four unconfirmed tdap-q3 seeds (31) — pending Jordan/Mikael confirmation of the seeds themselves
+## Reachable only from the four proposed Q3 seeds (31)
+
+These stay on hold until the owners confirm the four proposed seeds themselves.
 
 - Generalized Linear Models -- `10.1007/978-1-4899-3242-6`, top_cited_in_seed, cited_by=16924
 - Mean shift: a robust approach toward feature space analysis -- `10.1109/34.1000236`, top_cited_in_seed, cited_by=11432
@@ -82,3 +94,8 @@ Four flagged by Chat as **likely accept** on a closer look — bolded below.
 - Directionally selective mnemonic properties of neurons in the lateral dorsal nucleus of the thalamus of rats -- `10.1523/jneurosci.13-09-04015.1993`, top_cited_in_seed, cited_by=366
 - Interactions Between Idiothetic Cues and External Landmarks in the Control of Place Cells and Head Direction Cells -- `10.1152/jn.1998.80.1.425`, top_cited_in_seed, cited_by=323
 - Detecting periodic patterns in unevenly spaced gene expression time series using Lomb–Scargle periodograms -- `10.1093/bioinformatics/bti789`, top_cited_in_seed, cited_by=270
+
+## Identifier checks (Crossref, 2026-11-02)
+
+- `10.1016/b978-0-08-016160-0.50028-2` — resolved: the chapter "Elements of Algebraic Topology" by Kazimierz Kuratowski, in *Introduction to Set Theory and Topology* (Elsevier, 1972, ISBN 9780080161600). Kept on the list, with the title above made explicit.
+- `10.1007/bf01565634` ("Wolfram") — removed. Crossref gives only a one-page item in *Die Naturwissenschaften* 1 (1913), p. 511, titled "Wolfram", with author "Mk." and no reference list or abstract. It is not identifiable as a paper on this topic, so it was dropped from the hold list. This is why the first group reads 24 and the total 65 (it was 25 and 66).
