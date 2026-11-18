@@ -10,6 +10,14 @@ TDAP's research questions come from a domain collaborator; the engine's corpus a
 
 ---
 
+## Scope and use case
+
+TDAP studies persistent cohomology and the circular and toroidal coordinates it recovers from data. It covers three things: the mathematics of that construction and what it requires of the underlying cocycle; the algorithms and software that compute persistent (co)homology at scale, and their tradeoffs; and where cyclic or recurrent structure appears in data that was not gathered with topology in mind, starting with biomedical and physiological data.
+
+The engine gathers and organises the literature behind these questions, mainly in algebraic and computational topology, computational geometry, topological machine learning and dynamical systems, so that its owners can see what is established, what is contested and where the open problems are.
+
+Out of scope: topology used only as a generic feature-extraction step, with no question about the topology itself; applications to finance and cryptocurrency.
+
 ## What lives in this repo
 
 | | |
